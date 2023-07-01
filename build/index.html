@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en" class="sm:scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aero Academy</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="min-h-screen bg-slate-50 dark:bg-black dark:text-white">
+    <header class="sticky top-0 z-10 bg-blue-900 text-white">
+      <section class="mx-auto flex max-w-4xl items-center justify-between p-4">
+        <h1 class="text-3xl font-medium"><a href="#hero">🚀Aero Academy</a></h1>
+        <div>
+          <button
+            id="hamburger-button"
+            class="cursor-pointer text-3xl md:hidden"
+          >
+            &#9776;
+          </button>
+
+          <nav class="hidden space-x-8 text-xl md:block" aria-label="main">
+            <a href="#rocket" class="hover:opacity-90">Our Rockets</a>
+            <a href="#testimonials" class="hover:opacity-90">Testimonials</a>
+            <a href="#contacts" class="hover:opacity-90">Contact US</a>
+          </nav>
+        </div>
+      </section>
+
+      <section
+        id="mobile-menu"
+        class="absolute top-0 hidden w-full origin-top animate-open-menu flex-col justify-center bg-black text-5xl"
+      >
+        <button id="mobile-btn1" class="self-end px-6 text-7xl">&times;</button>
+        <nav
+          class="flex min-h-screen flex-col items-center py-8"
+          aria-label="mobile"
+        >
+          <a
+            href="#hero"
+            class="anchor w-full py-6 text-center hover:opacity-60"
+            >Aero-Academy</a
+          >
+          <a
+            href="#rocket"
+            class="anchor w-full py-6 text-center hover:opacity-60"
+            >Our Rockets</a
+          >
+          <a
+            href="#testimonials"
+            class="anchor w-full py-6 text-center hover:opacity-60"
+            >Testimonials</a
+          >
+          <a
+            href="#contacts"
+            class="anchor w-full py-6 text-center hover:opacity-60"
+            >Contact Us</a
+          >
+        </nav>
+      </section>
+    </header>
+
+    <main class="mx-auto max-w-4xl">
+      <section
+        id="hero"
+        class="widescreen:section-min-height tallscreen::section-min-height mb-12 flex scroll-mt-40 flex-col-reverse items-center justify-center gap-8 px-6 sm:flex-row"
+      >
+        <article class="max-w-lg sm:w-1/2">
+          <h2
+            class="sm:text-1xl my-10 max-w-md text-center text-4xl font-bold text-slate-900 dark:text-white sm:text-left"
+          >
+            We Boldly Go
+            <span class="text-indigo-400 dark:text-indigo-500"
+              >Where No Rocket
+            </span>
+            Has Gone Ever....
+          </h2>
+          <p
+            class="mt-4 max-w-md text-2xl text-slate-600 selection:text-blue-700 dark:text-white sm:text-left"
+          >
+            We're Are building Rockets For The Next Centur . From Moon to Mars ,
+            Jupiter and beyond.... Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Impedit ducimus atque voluptas laboriosam
+            repudiandae quasi magnam debitis voluptates repellat ipsam esse quis
+            aspernatur voluptate blanditiis, laborum ab neque earum ea.
+          </p>
+          <p
+            class="mt-4 max-w-md text-center text-2xl text-slate-600 selection:text-blue-700 dark:text-white sm:text-left"
+          >
+            We're Are building Rockets For The Nefhfhfhfghfgfgfgfhhfhfh
+          </p>
+        </article>
+        <img class="my-5 w-1/2" src="./img/rocketdab.png" alt="RocketDab" />
+      </section>
+      <hr class="mx-auto w-1/2 bg-white" />
+
+      <section
+        id="rocket"
+        class="widescreen:section-min-height tallscreen:section-max-height my-5 scroll-m-20 p-6"
+      >
+        <h2
+          class="mb-6 text-center text-4xl font-bold text-slate-900 dark:text-white sm:text-5xl"
+        >
+          Our Rockets
+        </h2>
+        <ul
+          class="mx-auto my-10 flex list-none flex-col items-center justify-center gap-7 sm:flex-row"
+        >
+          <li
+            class="flex w-2/3 flex-col items-center rounded-3xl border border-solid border-slate-900 bg-white px-2 py-6 shadow-xl dark:border-slate-100 dark:bg-black md:w-5/6"
+          >
+            <img class="mb-6 w-1/2" src="./img/rocketman.png" alt="" />
+            <h3
+              class="mt-2 text-3xl font-semibold text-slate-900 dark:text-white"
+            >
+              Explorer
+            </h3>
+            <p
+              class="mt-2 hidden text-2xl font-semibold text-slate-500 dark:text-slate-400 sm:block"
+            >
+              $
+            </p>
+            <p
+              class="text-1xl font-semibold text-slate-500 dark:text-slate-400 sm:hidden"
+            >
+              Affordable Exploration
+            </p>
+          </li>
+          <li
+            class="flex w-2/3 flex-col items-center rounded-3xl border border-solid border-slate-900 bg-white px-2 py-6 shadow-xl dark:border-slate-100 dark:bg-black md:w-5/6"
+          >
+            <img
+              class="mb-6 w-1/2"
+              src="./img/rocketride.png"
+              alt="adventurers"
+            />
+            <h3
+              class="mt-2 text-3xl font-semibold text-slate-900 dark:text-white"
+            >
+              Adventures
+            </h3>
+            <p
+              class="mt-2 hidden text-2xl font-semibold text-slate-500 dark:text-slate-400 sm:block"
+            >
+              $$$
+            </p>
+            <p
+              class="text-1xl font-semibold text-slate-500 dark:text-slate-400 sm:hidden"
+            >
+              Best Selling Rocket
+            </p>
+          </li>
+          <li
+            class="flex w-2/3 flex-col items-center rounded-3xl border border-solid border-slate-900 bg-white px-2 py-6 shadow-xl dark:border-slate-100 dark:bg-black md:w-5/6"
+          >
+            <img class="mb-6 w-1/2" src="./img/rocketlaunch.png" alt="" />
+            <h3
+              class="mt-2 text-3xl font-semibold text-slate-900 dark:text-white"
+            >
+              Infinity
+            </h3>
+            <p
+              class="mt-2 hidden text-2xl font-semibold text-slate-500 dark:text-slate-400 sm:block"
+            >
+              $$$$$
+            </p>
+            <p
+              class="text-1xl font-semibold text-slate-500 dark:text-slate-400 sm:hidden"
+            >
+              Luxury StartShip
+            </p>
+          </li>
+        </ul>
+      </section>
+      <hr class="mx-auto w-1/2 bg-white" />
+      <section
+        id="testimonials"
+        class="tallscreen:section-min-height widescreen:section-min-height my-12 scroll-mt-16 p-6"
+      >
+        <h2
+          class="mb-6 text-center text-4xl font-bold text-neon-primary dark:text-white sm:text-5xl"
+        >
+          Our Testimonials
+        </h2>
+        <div class="flex flex-col justify-center lg:flex-row">
+          <figure class="my-8">
+            <blockquote
+              class="relative mx-4 rounded-3xl border-2 bg-teal-500 p-5 py-8 dark:border-orange-100 dark:bg-black sm:text-center lg:w-96"
+            >
+              <p class="text-2xl dark:text-slate-400">
+                &#8223; Lorem ipsum dolor sit, amet consectetur adipisicing
+                elit. Pariatur sapiente ut excepturi asperiores voluptates vel
+                repellat ducimus voluptatum beatae minima nam facilis iusto
+                consectetur quaerat provident quos, aliquam odit inventore esse
+                nostrum velit ex quibusdam alias. Voluptate esse illum officiis!
+                &#8221;
+              </p>
+              <figcaption
+                class="mt-4 text-right text-xl italic text-blue-700 sm:text-2xl"
+              >
+                - Abhilash kannan
+              </figcaption>
+            </blockquote>
+          </figure>
+          <figure class="my-8">
+            <blockquote
+              class="relative order-last mx-4 rounded-3xl border-2 bg-teal-500 p-5 py-8 dark:border-orange-100 dark:bg-black sm:text-center lg:w-96"
+            >
+              <p class="text-2xl dark:text-slate-400">
+                &#8223; Lorem ipsum dolor sit, amet consectetur adipisicing
+                elit. Pariatur sapiente ut excepturi asperiores voluptates vel
+                repellat ducimus voluptatum beatae minima nam facilis iusto
+                consectetur quaerat provident quos, aliquam odit inventore esse
+                nostrum velit ex quibusdam alias. Voluptate esse illum officiis!
+                &#8221;
+              </p>
+              <figcaption
+                class="mt-4 text-right text-xl italic text-blue-700 sm:text-2xl"
+              >
+                - Gojo Satarou
+              </figcaption>
+            </blockquote>
+          </figure>
+          <figure class="my-8">
+            <blockquote
+              class="relative order-1 mx-4 rounded-3xl border-2 bg-teal-500 p-5 py-8 dark:border-orange-100 dark:bg-black sm:text-center lg:w-96"
+            >
+              <p class="text-2xl dark:text-slate-400">
+                &#8223; Lorem ipsum dolor sit, amet consectetur adipisicing
+                elit. Pariatur sapiente ut excepturi asperiores voluptates vel
+                repellat ducimus voluptatum beatae minima nam facilis iusto
+                consectetur quaerat provident quos, aliquam odit inventore esse
+                nostrum velit ex quibusdam alias. Voluptate esse illum officiis!
+                &#8221;
+              </p>
+              <figcaption
+                class="mt-4 text-right text-xl italic text-blue-700 sm:text-2xl"
+              >
+                - Adarsh kannan
+              </figcaption>
+            </blockquote>
+          </figure>
+        </div>
+      </section>
+      <hr class="mx-auto w-1/2 bg-white" />
+      <section
+        id="contacts"
+        class="widescreen:section-min-height tallscreen:section-min-height my-12 scroll-mt-36 p-6"
+      >
+        <h2
+          class="mb-6 text-center text-4xl font-bold text-slate-900 dark:text-white sm:text-5xl"
+        >
+          Contact US
+        </h2>
+        <form action="" class="">
+          <label for="Subject" class="px-2 font-bold">Subject:</label>
+          <input
+            type="text"
+            placeholder="Your Subject"
+            minlength="3"
+            maxlength="60"
+            class="my -5 mt-1 h-16 w-full rounded-2xl border-solid border-slate-900 px-3 text-black dark:border-none dark:text-black"
+            name="subject"
+            required
+          />
+          <label for="message" class="px-2 font-bold">Message:</label>
+          <textarea
+            name="message"
+            id="message"
+            cols="30"
+            rows="10"
+            required
+            placeholder="Your Message"
+            class="mt-2 h-52 w-full rounded-2xl border-solid border-slate-900 p-3 text-black dark:border-none dark:text-black"
+          ></textarea>
+          <button
+            class="my-3 h-10 w-36 rounded-xl border-2 border-solid border-slate-100 bg-blue-700 hover:bg-teal-400 active:bg-teal-300 dark:text-white"
+          >
+            Submit
+          </button>
+        </form>
+      </section>
+    </main>
+    <footer id="footer" class="bg-blue-700 text-xl text-white">
+      <section
+        class="mx-auto flex max-w-4xl flex-col p-4 sm:flex-row sm:justify-between"
+      >
+        <address>
+          <h2>Aero-Academy-Powered Products,Inc.</h2>
+          C-1661 Kribhco Nagar <br />
+          Surat, Gujarat-394515 <br />
+          Email:
+          <a href="mailto:abhiiyengar04@gmail.com">Inquires@Aero-academy</a
+          ><br />
+          Phone: <a href="phone:+918160351852">+918160351852</a>
+        </address>
+        <nav class="hidden flex-col gap-2 md:flex" aria-label="footer">
+          <a href="#rocket" class="list-none text-white hover:text-teal-500"
+            >Our Rockets</a
+          >
+          <a href="#testimonials" class="hover:text-teal-500">Testimonials</a>
+          <a href="#contacts" class="hover:text-teal-500">Contacts</a>
+          <a href="#hero" class="hover:text-teal-500">Aero-Academy</a>
+        </nav>
+        <div
+          class="text-2xs flex w-72 flex-row justify-around sm:w-60 sm:flex-col"
+        >
+          <p class="text-right">CopyRight &copy; <span id="year">2023</span></p>
+          <p class="text-right">All Rights Reserved | 2023</p>
+        </div>
+      </section>
+    </footer>
+  </body>
+  <script src="./js/code.jquery.com_jquery-3.7.0.min.js"></script>
+  <script src="./js/index.js"></script>
+</html>
